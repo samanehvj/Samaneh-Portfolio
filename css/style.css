@@ -1,0 +1,51 @@
+/* navbar  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: white;
+}
+.nav-bar{
+    font-size: 20px;
+    font-family:"Edmondsans";
+    font-weight: 900;
+    color: black;
+    letter-spacing: 3px;
+
+ }
+
+
+ 
+ .about-text{
+ font-family: 'Merriweather', serif;
+ font-size: 20px;
+ }
+ 
+ .about-title{
+     font-family:"cheque";
+     font-size: 30px;
+     font-weight: bolder;
+     color: black;
+     letter-spacing: 2px;
+ }
+
+ .link{
+     font-family: "Edmondsans";
+     
+ }
+
+.btn-secondary{
+    color: black!important;  
+    border: 2px solid black !important; 
+}
+
+.btn-secondary:hover{
+    background-color: #f47141 !important;
+        border-color: #f47141 !important;
+}
+
+
+ 
