@@ -10,13 +10,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/4a3a6523c2e50bc2a8de4445564c1cc1?family=Edmondsans" rel="stylesheet" type="text/css"/>
+    <script src="https://kit.fontawesome.com/8be283f0af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head> 
 <body>
     <!-- start nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <div class="container navbar">
         <a class="navbar-brand" href="index.php">
           <img src="imgs/logo.png" width="110" height="80"  alt="Samaneh Vajdi">
         </a>
@@ -36,19 +39,23 @@
         <a class="nav-link" href="">RESUME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">CONTACT</a>
+        <a class="nav-link" href="#contact">CONTACT</a>
       </li>
       </ul>
           </div>
         </div>
-      </nav>
-          <!-- end nav -->
-          <!-- <div class="container"> -->
-          <div id="#about">
-            <img src="imgs/hero.png" class="img-fluid mb-4" alt="...">
+      </nav>  
+
+        <div class="row" id="#about">
+          <div class="col-12">
+            <div class="text-center">
+              <img src="imgs/hero.png" class="img-fluid" alt="samaneh">
+            </div>
         </div>
-        
-        <div class="row mx-5">
+        </div><!-- end of about  -->
+
+        <!-- start text under hero image  -->
+        <div class="row mx-5 mt-5"> 
             <div class="col-sm-4">
               <div class="card border-0">
                 <div class="card-body">
@@ -73,95 +80,241 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> <!-- end text under hero image  -->
+<!-- 
 
-
-          <!-- Row 2 -->
-          <div class="row my-5 mx-5" id="project">
-			<div class="col-lg-4 mt-5 mb-5 ">
-                <div class="card border-0">
-                    <div class="card-body ">
-                      <h5 class="card-title text-center about-title">Youtab</h5>
-                      <p class="card-text text-center about-text">
-                          Branding
-                          <br>
-                          MVC
-                          <br>
-                          Admin Dashboard
-                          <br>
-                          Web Design
-                          <br>
-                          UI/UX
-                          <br>
-                          Web Development
-                          <br>
-                          </p>
-                          <div class="text-center ">
-                            <button type="button" class="btn btn-secondary btn-lg border-dark bg-light text-dark link ">EXPLORE</button>
-                            <br>
-                            <button type="button" class="btn btn-secondary btn-lg border-dark bg-light text-dark mt-3 link ">WEBSITE </button>
-                        </div>
-                     </div>
-                  </div> 
-            </div>
-
-            <div class="col-lg-8 ">
-                <img src="imgs/1.png" class="img-thumbnail border-0" alt="dd">
-            </div>
-            </div> 
-            <div class="row my-5 mx-5" id="project">
-                <div class="col-lg-4 mt-5 mb-5 ">
-                    <div class="card border-0">
-                        <div class="card-body ">
-                          <h5 class="card-title text-center about-title">Secret Menu</h5>
-                          <p class="card-text text-center about-text">
-                            Food Branding
-                            <br>
-                              MVC
-                              <br>
-                              Web Design
-                              <br>
-                              UI/UX
-                              <br>
-                              Web Development
-                              <br>
-                              </p>
-                              <div class="text-center ">
-                                <button type="button" class="btn btn-secondary btn-lg border-dark bg-light text-dark link ">EXPLORE</button>
-                                <br>
-                                <button type="button" class="btn btn-secondary btn-lg border-dark bg-light text-dark mt-3 link ">WEsBSITE </button>
-                            </div>
-                         </div>
-                      </div> 
-                </div>
-    
-                <div class="col-lg-8 col-sm-8  ">
-                    <img src="imgs/4.png" class="img-thumbnail border-0" alt="dd">
-                </div>
-                </div> 
-        <!-- </div> -->
-            <!-- end of row  -->
-
-        
-
-
-
-
-
-
-
-
+           <div class="waviy text-center ml-5 mt-5">
+            <span style="--i:1">P</span>
+            <span style="--i:2">R</span>
+            <span style="--i:3">O</span>
+            <span style="--i:4">J</span>
+            <span style="--i:5">E</span>
+            <span style="--i:6">C</span>
+            <span style="--i:7">T</span>
+           </div>  -->
           
 
+<!-- <div class="text text-center ml-5 mt-5">
+  <h5 class="baffle">Projects</h5>
+</div> -->   
+               
+          <div class="container" >
+            <div class="row" id="project">
+              <div class="col-12 col-lg-4 col-md-4 "id="#project">
+                <div class="card border-0">
+                  <div class="card-body  margin-bottom">
+                    <h5 class="card-title text-center about-title">Youtab</h5>
+                    <p class="card-text text-center  about-text">
+                        Branding
+                        <br>
+                        MVC
+                        <br>
+                        Web Design
+                        <br>
+                        UI/UX
+                        <br>
+                        Web Development
+                        <br>
+                        </p>
+                        <div class="buttons-coll">
+                          <a href="youtab.html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>EXPLORE</span> </a>
+                          <a href="https://youtab.ml/"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8  custom-btn btn-5"><span>WEBSITE</span> </a>
+                        </div>
+                   </div>
+                </div>  
+              </div>            
+              <div class="col-12 col-lg-8 col-sm-6 col-md-8"> 
+                <img src="imgs/1.png" class="img-fluid  border-0" alt="youtab">
+              </div>
+            </div>
 
 
-<!-- start footer -->
-      <footer class="bg-light text-center text-lg-start">
-        <div class="text-center  bg-light mt-4 p-3">
-          © 2021 Copyright: Samaneh Vajdi
-        </div>
-      </footer>
+          <!-- row 2  -->
+          <div class="row margin-top">
+            <div class="col-12 col-lg-4 col-md-4">
+              <div class="card border-0">
+                <div class="card-body margin-bottom">
+                  <h5 class="card-title text-center about-title">Secret Menu</h5>
+                  <p class="card-text text-center about-text">
+                     Food Branding
+                      <br>
+                      MVC
+                      <br>
+                      Web Design
+                      <br>
+                      UI/UX
+                      <br>
+                      Web Development
+                      <br>
+                      </p>
+                      <div class="buttons-coll">
+                      <a href="secret-menu.html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>EXPLORE</span> </a>
+                      <a href="https://secret-menus.com/"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-4 col-sm-8 custom-btn btn-5 "> <span>WEBSITE</span>  </a>
+                      </div>
+                 </div>
+              </div>  
+            </div>            
+            <div class="col-12 col-lg-8 col-sm-6 col-md-8"> 
+              <img src="imgs/4.png" class="img-fluid  border-0" alt="secret-menu">
+            </div>
+          </div>
+          <!-- end row 2 -->
+
+          <!-- start row 3 -->
+          <div class="row">
+            <div class="col-12 col-lg-4 col-md-4">
+              <div class="card border-0">
+                <div class="card-body margin-bottom">
+                  <h5 class="card-title text-center about-title"> Coming Soon </h5>
+                  <p class="card-text text-center about-text">
+                      Branding
+                      <br>
+                      Grid CSS
+                      <br>
+                      Admin Dashboard
+                      <br>
+                      Web Design
+                      <br>
+                      UI/UX
+                      <br>
+                      Web Development
+                      <br>
+                      </p>
+                      <div class="buttons-coll">
+                      <a href="coming-soon.html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>EXPLORE</span> </a>
+                    <a href="https://coming-soon.gq/"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>WEBSITE</span> </a>
+                    </div>
+                </div>
+              </div>   
+            </div>            
+            <div class="col-12 col-lg-8 col-sm-6 col-md-8"> 
+              <img src="imgs/3.png" class="img-fluid  border-0" alt="secret-menu">
+            </div>
+          </div>
+           <!-- end row 3 -->
+
+
+
+           <!-- start row 4 -->
+          <div class="row">
+            <div class="col-12 col-lg-4 col-md-4">
+              <div class="card border-0 margin-bottom">
+                <div class="card-body ">
+                  <h5 class="card-title text-center about-title">candace-jess</h5>
+                  <p class="card-text text-center about-text">
+                    Procast
+                      <br>
+                      MVC
+                      <br>
+                      Admin Dashboard
+                      <br>
+                      Web Design
+                      <br>
+                      UI/UX
+                      <br>
+                      Web Development
+                      <br>
+                      </p>
+                      <div class="buttons-coll">
+                      <a href="candace-jess.html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>EXPLORE</span> </a>
+                      <a href="https://candace-jess.cf/"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>WEBSITE</span> </a>
+                      </div>
+                 </div>
+              </div>   
+            </div>            
+            <div class="col-12 col-lg-8 col-sm-6 col-md-8"> 
+              <img src="imgs/2.png" class="img-fluid  border-0" alt="candace-jess">
+            </div>
+          </div>
+           <!-- end row 4 -->
+           
+
+
+           <!-- start row 5 -->
+          <div class="row">
+            <div class="col-12 col-lg-4 col-md-4">
+              <div class="card border-0 margin-bottom">
+                <div class="card-body ">
+                  <h5 class="card-title text-center about-title">Yoshi hair salon</h5>
+                  <p class="card-text text-center about-text">
+                      Branding
+                      <br>
+                      AJAX
+                      <br>
+                      Web Design
+                      <br>
+                      UI/UX
+                      <br>
+                      Web Development
+                      <br>
+                      </p>
+                      <div class="buttons-coll">
+                      <a href="yoshi.html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>EXPLORE</span> </a>
+                      <a href="https://www.samanehvj.com/yoshi/"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>WEBSITE</span> </a>
+                      </div>
+                 </div>
+              </div>   
+            </div>            
+            <div class="col-12 col-lg-8 col-sm-6 col-md-8"> 
+              <img src="imgs/6.png" class="img-fluid  border-0" alt="yoshi">
+            </div>
+          </div>
+           <!-- end row 5 -->
+
+
+             <!-- start row 6 -->
+          <div class="row">
+            <div class="col-12 col-lg-4 col-md-4">
+              <div class="card border-0 margin-bottom">
+                <div class="card-body ">
+                  <h5 class="card-title text-center about-title"> Innovative Bridge </h5>
+                  <p class="card-text text-center about-text">
+                      Company Service
+                      <br>
+                      Web Design
+                      <br>
+                      UI/UX
+                      <br>
+                      Web Development
+                      <br>
+                      </p>
+                      <div class="buttons-coll">
+                      <!-- <a href="innovative-bridge .html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-"> EXPLORE </a> -->
+                       <a href="innovative-bridge .html"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>EXPLORE</span> </a>
+                      <a href="https://www.samanehvj.com/InnovativeBridge/"  class="btn btn-secondary btn-block border-dark bg-light text-dark  col-lg-12 col-md-8 col-xs-12 col-sm-8 custom-btn btn-5"><span>WEBSITE</span> </a>
+                      </div>
+                 </div>
+              </div>   
+            </div>            
+            <div class="col-12 col-lg-8 col-sm-6 col-md-8"> 
+              <img src="imgs/5.png" class="img-fluid  border-0" alt="innovative-bridge">
+            </div>
+          </div> <!-- end row 6 -->
+            </div>  <!-- end container-->
+
+            <div class="footer">
+              <div class="row" id="contact">
+                <div class="social-buttons">
+                <h1 class="text-center text-light contact" id="#contact">Contact me </h1>
+              <a href="https://github.com/samanehvj"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fas fa-at"></i></a>
+
+
+            </div>
+          </div>
+            </div>
+            <div class="text-center  bg-light mt-2 p-3">
+              © 2021 Copyright: Samaneh Vajdi
+            </div>
+
+           
+
+
         
+
+   
 </body>
 </html>
 
