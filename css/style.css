@@ -1,10 +1,13 @@
 /* navbar  */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .pt-1 {
+    padding-top: 1rem; 
+  }
 body{
     background-color: white;
 }
@@ -16,36 +19,309 @@ body{
     letter-spacing: 3px;
 
  }
-
-
- 
+ .margin-bottom{
+    margin-top: 100px;
+}
+.margin-top{
+    margin-top: -40px;
+}
  .about-text{
  font-family: 'Merriweather', serif;
- font-size: 20px;
+ font-size: 18px;
  }
  
  .about-title{
      font-family:"cheque";
-     font-size: 30px;
+     font-size: 25px;
      font-weight: bolder;
      color: black;
      letter-spacing: 2px;
  }
 
- .link{
-     font-family: "Edmondsans";
-     
- }
+.buttons-coll {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+  }
 
-.btn-secondary{
-    color: black!important;  
-    border: 2px solid black !important; 
-}
+  .custom-btn {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
 
-.btn-secondary:hover{
-    background-color: #f47141 !important;
-        border-color: #f47141 !important;
-}
+  .btn-5 {
+    width: 200px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-5 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-5:before,
+  .btn-5:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #f47141;
+    transition: all 0.3s ease;
+  }
+  .btn-5:before {
+    height: 50%;
+    width: 2px;
+  }
+  .btn-5:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-5:hover:before {
+    height: 100%;
+  }
+  .btn-5:hover:after {
+    width: 100%;
+  }
+  .btn-5 span:before,
+  .btn-5 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #eeb350;
+    transition: all 0.3s ease;
+  }
+  .btn-5 span:before {
+    width: 2px;
+    height: 50%;
+  }
+  .btn-5 span:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-5 span:hover:before {
+    height: 100%;
+  }
+  .btn-5 span:hover:after {
+    width: 100%;
+  }
 
+  .waviy {
+    position: relative;
 
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    margin-top:30px ;
+    font-size: 60px;
+    margin-right: 40px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    animation: flip 4s infinite;
+    background-image: linear-gradient(#f47141, yellow);    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
  
+
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+
+  /* .text { 
+    position: relative ; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+h5{
+  font-family: 'VT323', monospace;
+  font-size:40px;
+  font-weight:500;
+  color:black;
+}  */
+
+
+  
+/* .footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55vh;
+  background: black;
+}
+.test ul {
+   position: relative;
+   display: flex;
+   transform: rotate(-25deg) skew(25deg);
+   transform-style: preserve-3d;
+}
+.test ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px;
+}
+.test ul li:before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 10px;
+  background: #2a2a2a;
+  trnasform-origin: top;
+  transform: skewX(-41deg);
+}
+.test ul li:after{
+  content: '';
+  position: absolute;
+  top:5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: #2a2a2a;
+  trnasform-origin: right;
+  transform: skewY(-49deg);
+}
+.test ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+}
+.test ul li:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+.test ul li:hover span:nth-child(5){
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+.test ul li:hover span:nth-child(4){
+  transform: translate(30px, -30px);
+  opacity: .8;
+}
+.test ul li:hover span:nth-child(3){
+  transform: translate(20px, -20px);
+  opacity: .6;
+}
+.test ul li:hover span:nth-child(2){
+  transform: translate(10px, -10px);
+  opacity: .4;
+}
+.test ul li:hover span:nth-child(1){
+  transform: translate(0px, 0px);
+  opacity: .2;
+}
+.test ul li:nth-child(1):hover span{
+  background: #52E19F !important;
+}
+.test ul li:nth-child(2):hover span{
+  background: #2C3456 !important;
+}
+ul li:nth-child(3):hover span{
+  background: #EA6E96 !important;
+}
+.test ul li:nth-child(4):hover span{
+  background: #FCEB00 !important;
+} */
+
+
+.footer{
+  background: black;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact{
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family:"Edmondsans";
+
+}
+
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+  background: linear-gradient(45deg,#f47141,#eeb350);
+
+  
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,black,darkblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
