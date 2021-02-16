@@ -688,7 +688,7 @@ yellow circle
 .orange01{
     width: 27vw;
     height: 27vw;
-    background:#eeb350;
+    background:#ffa333;
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -724,11 +724,11 @@ yellow circle
     }
     50.01% {
         transform: rotate(-360deg);
-        background: #f47141;
+        background: #ffa333;
     }
     100% {
         transform: rotate(-360deg);
-        background: #f47141;
+        background: #ffa333;
     }
 }
 
