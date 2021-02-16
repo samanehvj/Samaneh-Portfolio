@@ -16,27 +16,7 @@ body{
     font-family:"Gravitas One";
     font-weight: bolder;
     letter-spacing: 6px;
-  
-
  }
- .nav-link a{
-  display: block;
-  color: red;
-  text-decoration: none;
-  position: relative;
-}
-
-.nav-link a::after{
-  content: "";
-  background: navy;
-	mix-blend-mode: exclusion;
-  width: calc(100% + 20px);
-  height: 0;
-  position: absolute;
-  bottom: -4px;
-  left: -10px;
-	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
 
 .nav-link a:hover::after{
 	height: calc(100% + 8px)
@@ -48,10 +28,10 @@ body{
 }
 
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #f47141;
+    color: #ff7033;
   }
 
- 
+/* logo swing  */
 
 @-webkit-keyframes swing
 {
@@ -128,9 +108,79 @@ body{
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
 }
-  
+
+.mt {
+  margin-top: -60px;
+
+}
+
+#btn {
+  background: #ff7033;
+  font-family:"Gravitas One";
+  height: 50px;
+  min-width: 150px;
+  float: left;
+  border: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  transition: 2s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+#btn #circle {
+  width: 50px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+  color: white;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background:#008080;
+  color: white;
+  font-weight: bold;
+  font-family:"Gravitas One";
+
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+  color: white;
+}
+  .m {
+    margin-top: 40px;
+  }
+
+
  .margin-bottom{
-    margin-top: 100px;
+    margin-top: 14px;
 }
 .margin-top{
     margin-top: -40px;
@@ -186,7 +236,6 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    background-color: beige;
   }
   .btn-5:before,
   .btn-5:after {
@@ -194,7 +243,7 @@ body{
     content: "";
     right: 0;
     bottom: 0;
-    background: #f47141;
+    background: #ff7033;
     transition: all 0.3s ease;
   }
   .btn-5:before {
@@ -217,7 +266,7 @@ body{
     content: "";
     left: 0;
     top: 0;
-    background: #eeb350;
+    background: #008080;
     transition: all 0.3s ease;
   }
   .btn-5 span:before {
@@ -249,7 +298,7 @@ body{
     letter-spacing: 8px;
     text-transform: uppercase;
     animation: flip 4s infinite;
-    background-image: linear-gradient(#f47141, yellow);    animation-delay: calc(.2s * var(--i))
+    background-image: linear-gradient(#ff7033, #eeb350);    animation-delay: calc(.2s * var(--i))
   }
   @keyframes flip {
     0%,80% {
@@ -283,6 +332,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 .contact{
   font-size: 30px;
@@ -302,7 +352,7 @@ body{
   align-items: center;
   position: relative;
   margin: 0 8px;
-  background: linear-gradient(45deg,#f47141,#eeb350);
+  background: linear-gradient(45deg,#ff7033,#eeb350);
 
   
 }
@@ -312,7 +362,7 @@ body{
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(45deg,#22a6b3,#30336b);
+  background: linear-gradient(45deg,#ff7033,#008080);
   border-radius: 50%;
   z-index: -1;
   transition: 0.3s ease-in;
@@ -327,7 +377,7 @@ body{
 }
 
 .social-buttons a:hover i{
-  background: linear-gradient(45deg,black,darkblue);
+  background: linear-gradient(45deg,black,#008080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(2.2);
@@ -350,7 +400,7 @@ body{
   list-style: none;
   width: 20px;
   height: 20px;
-  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);  animation: animate 25s linear infinite;
+  background: linear-gradient(90deg, #fcff9e 0%, #ff7033 100%);  animation: animate 25s linear infinite;
   bottom: -150px;
   
 }
@@ -481,11 +531,11 @@ body{
   width:200px;
   height:20px;
   padding:20px 0;
-  border:1px solid #f47141;
+  border:1px solid #ff7033;
   overflow:hidden;
   display:inline-block;
   transition:all 0.5s;
-  box-shadow:0px 3px 0px #f47141;
+  box-shadow:0px 3px 0px #ff7033;
   border-radius: 4px;
   font-family: "Gravitas One", sans-serif;
   color: black;
@@ -495,9 +545,9 @@ body{
 .btn-case-study:hover, .btn-case-study:active {
   text-decoration: none;
   color:#fff;
-  border-color:#f47141;
-  background:#f47141;
-  box-shadow:0 0 0 #f47141;
+  border-color:#ff7033;
+  background:#ff7033;
+  box-shadow:0 0 0 #ff7033;
 }
 
 .btn-case-study-label {
@@ -519,7 +569,7 @@ body{
   height:10px;
   margin-right:-10px;
   background:rgba(0,0,0,0);
-  border:3px solid red;
+  border:3px solid #ff7033;
   border-top:none;
   border-right:none;
   transition: opacity 0.5s, top 0.5s, right 0.5s;
@@ -529,7 +579,7 @@ body{
 .btn-case-study:hover .btn-case-study-label,
 .btn-case-study:active .btn-label {
   padding-right:30px;
-  color:red;
+  color:#ff7033;
 }
 
 .btn-case-study:hover .btn-case-study-label:after,
