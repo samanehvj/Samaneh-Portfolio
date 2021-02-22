@@ -13,9 +13,10 @@ body{
 }
 .nav-bar{
     font-size: 14px;
-    font-family:"Gravitas One";
+    font-family:"cheque-black";
     font-weight: bolder;
     letter-spacing: 6px;
+    
  }
 
 .nav-link a:hover::after{
@@ -188,22 +189,25 @@ body{
  .about-text{
  font-family: 'Merriweather', serif;
  font-size: 18px;
+ 
  }
  
  .about-title{
-     font-family:"cheque";
+     font-family:"cheque-black";
      font-size: 25px;
      font-weight: bolder;
      color: black;
      letter-spacing: 2px;
+     text-transform:uppercase
  }
  .about-title-case{
-  font-family:"cheque";
+  font-family:"cheque-black";
   font-size: 33px;
   font-weight: bolder;
   color: black;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  text-transform:uppercase
  }
 
 .buttons-coll {
@@ -236,6 +240,9 @@ body{
     display: block;
     width: 100%;
     height: 100%;
+      font-family:"Gravitas One";
+      font-weight: bold;
+
   }
   .btn-5:before,
   .btn-5:after {
@@ -337,7 +344,7 @@ body{
 .contact{
   font-size: 30px;
   margin-bottom: 40px;
-  font-family: "Gravitas One", sans-serif;
+  font-family:"Gravitas One";
 
 }
 
@@ -537,7 +544,7 @@ body{
   transition:all 0.5s;
   box-shadow:0px 3px 0px #ff7033;
   border-radius: 4px;
-  font-family: "Gravitas One", sans-serif;
+  font-family:"Gravitas One";
   color: black;
 
 }
