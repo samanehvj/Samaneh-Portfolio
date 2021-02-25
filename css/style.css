@@ -5,14 +5,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+  
   .pt-1 {
     padding-top: 1rem; 
   }
-body{
-   background-image: -webkit-linear-gradient(rgb(179, 198, 255) .005em, transparent .030em), -webkit-linear-gradient(left, rgb(179, 198, 255) .005em, transparent .030em);
-   background-size: 10px 10px ;
-}
-.nav-bar{
+
+ .nav-bar{
     font-size: 15px;
     font-family:"cheque-black";
     font-weight: bolder;
@@ -30,14 +28,19 @@ body{
 }
 
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #ff7033;
+    color: #D9B03A;
   }
 
   .method {
-    color: #ff7033;
     font-family:"karla";
     font-size: 20px;
+    font-weight: 900;
 
+  }
+  .about-title i {
+    color: #D9B03A;
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
   }
 
 /* logo swing  */
@@ -125,7 +128,7 @@ body{
 
 
 #btn {
-  background: #ff7033;
+  background: #D9B03A;
   font-family:"karla";
   height: 50px;
   min-width: 220px;
@@ -260,7 +263,7 @@ body{
     content: "";
     right: 0;
     bottom: 0;
-    background: #ff7033;
+    background: #D9B03A;
     transition: all 0.3s ease;
   }
   .btn-5:before {
@@ -315,7 +318,7 @@ body{
     letter-spacing: 8px;
     text-transform: uppercase;
     animation: flip 4s infinite;
-    background-image: linear-gradient(#ff7033, #eeb350);    animation-delay: calc(.2s * var(--i))
+    background-image: linear-gradient(#D9B03A, #eeb350);    animation-delay: calc(.2s * var(--i))
   }
   @keyframes flip {
     0%,80% {
@@ -349,7 +352,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 145px;
 }
 .contact{
   font-size: 30px;
@@ -369,7 +372,7 @@ body{
   align-items: center;
   position: relative;
   margin: 0 8px;
-  background: linear-gradient(45deg,#ff7033,#eeb350);
+  background: linear-gradient(45deg,#D9B03A,#008080);
 
   
 }
@@ -379,7 +382,7 @@ body{
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(45deg,#ff7033,#008080);
+  background: linear-gradient(45deg,#D9B03A,#008080);
   border-radius: 50%;
   z-index: -1;
   transition: 0.3s ease-in;
@@ -417,7 +420,7 @@ body{
   list-style: none;
   width: 20px;
   height: 20px;
-  background: linear-gradient(90deg, #fcff9e 0%, #ff7033 100%);  animation: animate 25s linear infinite;
+  background: linear-gradient(90deg, #008080 0%, #D9B03A 100%);  animation: animate 25s linear infinite;
   bottom: -150px;
   
 }
@@ -522,15 +525,15 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background: #2F2F31;
+  background: #white;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2F2F31;
+  background: red;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2F2F31;
+  background:white;
 }
 
 .btn-case-study {
@@ -548,11 +551,11 @@ body{
   width:200px;
   height:20px;
   padding:20px 0;
-  border:1px solid #ff7033;
+  border:1px solid #D9B03A;
   overflow:hidden;
   display:inline-block;
   transition:all 0.5s;
-  box-shadow:0px 3px 0px #ff7033;
+  box-shadow:0px 3px 0px #D9B03A;
   border-radius: 4px;
   font-family:"karla";
   color: black;
@@ -562,9 +565,9 @@ body{
 .btn-case-study:hover, .btn-case-study:active {
   text-decoration: none;
   color:#fff;
-  border-color:#ff7033;
-  background:#ff7033;
-  box-shadow:0 0 0 #ff7033;
+  border-color:#D9B03A;
+  background:#D9B03A;
+  box-shadow:0 0 0 #D9B03A;
 }
 
 .btn-case-study-label {
@@ -586,7 +589,7 @@ body{
   height:10px;
   margin-right:-10px;
   background:rgba(0,0,0,0);
-  border:3px solid #ff7033;
+  border:3px solid #D9B03A;
   border-top:none;
   border-right:none;
   transition: opacity 0.5s, top 0.5s, right 0.5s;
