@@ -17,15 +17,52 @@ margin-top: 60px;
   background-color: #D9B03A;
   border-radius: 15px;
   color:black ;
-
+  letter-spacing: 2px;
 }
 .talk:hover{
   border: solid 2px black;
   border-radius: 15px;
   color: #008080;
-
 }
 
+.samaneh-title{
+font-family:"homemade apple";
+font-size: 35px;
+font-weight: bolder;
+color: black;
+letter-spacing: 2px;
+text-transform:uppercase
+}
+
+
+.whatido{
+  font-size: 35px;
+font-weight: bolder;
+color: black;
+font-family:"cheque-black";
+
+letter-spacing: 2px;
+text-transform:uppercase
+}
+.samaneh-title span {
+  color: #D9B03A;
+
+}
+.work{
+  font-size: 40px;
+  font-weight: bolder;
+  color: black;
+  font-family:"cheque-black";
+  text-transform:uppercase
+}
+.work:hover{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family:"cheque-black";
+  text-transform:uppercase;
+  color: #008080;
+
+}
 .margin-b{
 margin-top: 50px;
 }
@@ -159,7 +196,7 @@ margin-top: -60px;
 background: #D9B03A;
 font-family:'karla', sans-serif;
 height: 50px;
-min-width: 230px;
+min-width: 250px;
 float: left;
 border: none;
 color: black;
