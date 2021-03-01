@@ -13,7 +13,18 @@ padding-top: 1rem;
 .mm{
 margin-top: 60px;
 }
+.talk{
+  background-color: #D9B03A;
+  border-radius: 15px;
+  color:black ;
 
+}
+.talk:hover{
+  border: solid 2px black;
+  border-radius: 15px;
+  color: #008080;
+
+}
 
 .margin-b{
 margin-top: 50px;
@@ -37,11 +48,17 @@ color: black;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-color: #D9B03A;
+color: #008080;
+background-color: white;
+border: 2px black;
+border-radius: 15px;
+font-family:"cheque-black";
 }
 
+
+
 .method {
-font-family:"karla";
+font-family:'karla', sans-serif;
 font-size: 20px;
 font-weight: 900;
 
@@ -140,7 +157,7 @@ margin-top: -60px;
 
 #btn {
 background: #D9B03A;
-font-family:"karla";
+font-family:'karla', sans-serif;
 height: 50px;
 min-width: 230px;
 float: left;
@@ -186,7 +203,7 @@ user-select: none;
 background:#008080;
 color: white;
 font-weight: bold;
-font-family:"karla";
+font-family:'karla', sans-serif;
 
 }
 
@@ -209,8 +226,8 @@ margin-top: 14px;
 margin-top: -40px;
 }
 .about-text{
-font-family:"karla";
-margin-top: 20px; 
+  font-family:'karla', sans-serif;
+  margin-top: 20px; 
 font-size: 18px;
 
 
@@ -264,7 +281,7 @@ position: relative;
 display: block;
 width: 100%;
 height: 100%;
-font-family:"karla";
+font-family:'karla', sans-serif;
 font-weight: bold;
 
 }
@@ -331,7 +348,7 @@ display: inline-block;
 margin-top:30px ;
 font-size: 60px;
 margin-right: 40px;
-font-family:"karla";
+font-family:'karla', sans-serif;
 letter-spacing: 8px;
 text-transform: uppercase;
 animation: flip 4s infinite;
@@ -374,7 +391,7 @@ margin-top: 145px;
 .contact{
 font-size: 30px;
 margin-bottom: 40px;
-font-family:"karla";
+font-family:'karla', sans-serif;
 
 }
 
@@ -576,7 +593,7 @@ display:inline-block;
 transition:all 0.5s;
 box-shadow:0px 3px 0px #D9B03A;
 border-radius: 4px;
-font-family:"karla";
+font-family:'karla', sans-serif;
 color: black;
 
 }
@@ -630,7 +647,7 @@ top:22%;
 }
 
 .copyright{
-font-family: "karla";
+font-family:'karla', sans-serif;
 color: white;
 font-size: 20px;
 text-align: center;
